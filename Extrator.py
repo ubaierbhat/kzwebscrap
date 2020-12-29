@@ -1,5 +1,6 @@
 import json
 from time import sleep
+from Transliterator import transliterate
 
 import requests
 from bs4 import BeautifulSoup
@@ -118,6 +119,7 @@ def transform(key):
             hi_meaning = tds[3].getText().strip()
             ks_example = tds[4].getText().strip()
             en_meaning = tds[5].getText().strip()
+            transliteration = transliterate(ks_word)
 
             print(f'ks_word  = {ks_word}')
             print(f'category = {category}')
@@ -125,13 +127,15 @@ def transform(key):
             print(f'hi_meaning = {hi_meaning}')
             print(f'ks_example = {ks_example}')
             print(f'en_meaning = {en_meaning}')
+            print(f'transliteration = {transliteration}')
 
             entry = {
                 'ks_word': ks_word,
                 'category': category,
                 'en_example': en_example,
                 'ks_example': ks_example,
-                'en_meaning': en_meaning
+                'en_meaning': en_meaning,
+                'transliteration': transliteration
             }
             entries.append(entry)
             word_count = word_count + 1
