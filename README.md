@@ -3,7 +3,7 @@ web scraping kashmiri language dictionary
 
 ## Introduction
 
-This repo is a data dump of Kashmiri language dictionary extracted from [kashmirizabaan.com](kashmirizabaan.com/index.php) and [DSAL](https://dsalsrv04.uchicago.edu/dictionaries/hassan/). The extracted data is saved in json format (under `data/json/`) to make it more open and human readable.
+This repo is a data dump of Kashmiri language dictionary extracted from [kashmirizabaan.com](https://kashmirizabaan.com/index.php) and [DSAL](https://dsalsrv04.uchicago.edu/dictionaries/hassan/). The extracted data is saved in json format (under `data/json/`) to make it more open and human readable.
   
 ## Requirements
 
